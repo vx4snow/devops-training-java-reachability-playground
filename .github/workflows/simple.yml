@@ -1,5 +1,4 @@
 name: Shell commands
-
 on: [push]
 
 jobs:
