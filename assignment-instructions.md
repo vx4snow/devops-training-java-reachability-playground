@@ -27,4 +27,26 @@ The solution repo contains workflow file with SAST, SCA and DAST steps added to 
 
 
 
-Please add your queries to the Q&A section.
+-----
+
+Some Common Errors and their solutions
+If you are facing the below error while running DAST scan using GitHub Actions:
+
+
+
+
+
+
+Solution to this problem is:
+
+In your Github actions workflow file for OWASP ZAP code, make sure your branch name is correct. For example, in the following screenshot, the highlighted name should be the same as your branch name. If not, your DAST scan will fail.
+
+
+
+
+
+
+
+
+Note: Also, make sure you are not running DAST scan on a cloned repo. DAST scan should be run from a fresh repo.
+
