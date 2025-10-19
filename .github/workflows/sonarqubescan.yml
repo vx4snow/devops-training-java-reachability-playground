@@ -13,6 +13,7 @@ jobs:
         java-version: '21'
         distribution: 'zulu'
         cache: maven
+        ref: master
     - name: Build with Maven cloud
       run:  mvn -B verify sonar:sonar -Dsonar.projectKey=devops-training-java-reachability-playground -Dsonar.organization=Penrose -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
       env:
