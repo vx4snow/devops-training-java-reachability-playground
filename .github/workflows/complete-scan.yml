@@ -15,7 +15,7 @@ jobs:
         cache: maven
         ref: master
     - name: Run Sonar Analysis with cloud
-      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=brudex_devops-training-java-reachability-playground -Dsonar.organization=Penrose -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
+      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=brudex_devops-training-java-reachability-playground -Dsonar.organization=brudex -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
       
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
